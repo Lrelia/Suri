@@ -1,0 +1,160 @@
+/* 
+My CSS code is really orderless. Next time I will order my CSS code by structure 
+in DOM, rather than alphabetize.
+*/
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	      	position: relative;
+	      	font-family: kid;
+}
+.beActive {
+	background: hsla(120,70%,50%,.7);
+}
+a {
+	text-decoration: none;
+}
+.circle {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background: url(../images/s6.jpg);
+	background-size: 100%;
+	box-shadow: 0 0 5px 0 brown; 
+	border: 2px solid yellow;
+  	position: absolute;
+  	top: 15px;
+}
+.container:hover .circle{
+  -webkit-animation: slide 5s infinite;
+}
+@-webkit-keyframes slide {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	20% {
+    left: 140px;
+    top: 80px;
+  	}
+    50% {
+    left: 310px;
+    top: 0;
+  	}
+    70% {
+    	left: 520px;  
+    	top: 80px;
+    }
+    100% {
+		left: 700px;
+		top: 0;
+    }
+}
+.container {
+	width: 800px;
+	height: 100px;
+	/*border: 1px solid red;*/
+}
+.content {
+	/*border: 2px solid pink;*/
+	width: 92%;
+	padding-top: 2%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 8px; 
+	background: hsla(120,70%,50%,.7);
+}
+@font-face {
+	font-family: kid;
+	src: url(../font/SingleMalta.ttf) format('truetype');
+}
+footer {
+	width: 100%;
+	padding-top: 10px;
+	height: 150px;
+	border-top: 3px dotted hsla(20, 70%,80%,.7);
+}
+.foot {
+	list-style: none;
+	text-align: center;
+} 
+
+header>div {
+	display: inline-block;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+	margin: 1% 0 0 1.5%;
+	background: url(../images/logo.png);
+}
+.nav {
+	display: inline-block;
+}
+.menu li{
+	display: inline-block;
+	width: 15%;
+	line-height: 2em;
+	text-align: center;
+	vertical-align: middle;
+	background: hsla(20, 70%,80%,.7);
+	border: 1px;
+	color: red;
+	border-radius:  14px 2px 14px 0;
+	text-shadow: 4px 4px 12px yellow;
+}
+.menu li a {
+	display: block;
+	border-radius:  14px 2px 14px 0;
+}
+.pic {
+   float: right;
+   text-align: left;
+   padding-right: 1em; 
+   font-family: kid;
+   color: hsla(20,50%,70%,.5);
+   font-size: 3em;
+   font-weight: bolder;
+   color: 
+}
+.row1 {
+	display: inline-block;
+	padding: 5px;
+	width: 270px;
+	margin: 1%;
+	height: 300px;
+	background: #fff;
+	border: 1px;
+	box-shadow: 0 0 5px 0 grey;
+}
+.row2 {
+	display: inline-block;
+	width: 400px;
+	padding: 5px;
+	margin-left: 3%;
+	height: 300px;
+	background: #fff;
+	border: 1px;
+	box-shadow: 0 0 5px 0 grey;
+}
+.row1 div {
+	background-size: 100%;
+	width: 256px;
+	height: 286px;
+}
+.row2 div {
+	background-size: 100%;
+	width: 388px;
+	height: 288px;
+}
+.whole {
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 960px;
+	height: auto;
+	border: 1px dotted grey;
+	border-radius: 8px;
+	box-shadow: 0 0 5px 2px pink;
+}
